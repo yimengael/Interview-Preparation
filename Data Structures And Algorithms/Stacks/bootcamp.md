@@ -16,3 +16,19 @@ Stacks can be implemented using arrays or linked lists. Depending of whiever dat
 When you use linked list to implement the stack, all the operations run in O(i). We are adding a node at the head of the linked list when pushing, we are removing a node at the head when popping, we are just reading the value of the head node when getting the peek and we are checking is the head noe is null when checking if the stack is empty.
 
 # Java libraries for Stacks
+In Java, we can represent a stack using the class Stack as follow. For example, if we want to create a stack of integers.
+```
+Stack<Integer> stack = new Stack<Integer>();
+```
+
+or via the Deque interface. The LinkedList class used as the concrete implementation is a doubly linked list that provide  effiscient O(1) time stack functionality. It is shown here 
+```
+Deque<Integer> stack = new LinkedList<Integer>();
+```
+The related methods used are the following :
+
+- `push()` : 
+- `peek()` :
+- `pop()` :
+
+For instance, The Deque methods `addFirst(42)`, `peekFirst()`, and `removeFirst()` are identical to `push(42)`, `peek()`, and `pop()`.
