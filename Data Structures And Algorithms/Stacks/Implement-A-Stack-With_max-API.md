@@ -48,7 +48,7 @@ public class MaxStack {
   
   public int peek() {
     if (valueStack.isEmpty()) {
-      throw new IllegalStateException("pop(): the stack is empty");
+      throw new IllegalStateException("peek(): the stack is empty");
     }
     int val = valueStack.peek();
     return val;
@@ -56,7 +56,7 @@ public class MaxStack {
   
   public int max() {
     if (valueStack.isEmpty()) {
-      throw new IllegalStateException("pop(): the stack is empty");
+      throw new IllegalStateException("max(): the stack is empty");
     }
     int max = maxStack.peek();
     return max;
