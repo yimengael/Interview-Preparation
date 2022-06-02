@@ -51,6 +51,8 @@ public int evaluateRPNExpresion(String expr) {
           }
           val = val1 / val2;
         break;
+        default:
+          throw new IllegalArgumentException("Malformed RPN expression.");
       }
       stack.push(val);
     } else {
