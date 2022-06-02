@@ -11,9 +11,18 @@ Elements are added (pushed) on top of the stack and they are removed (popped) fr
 Stacks can be implemented using arrays or linked lists. Depending of whiever data structures we use, the time complexity can vary from better to armortized to worst cases.
 
 ## Using arrays
+Using an array means we need to find a way to add at the begining or at the end of the array depending on which operation is the cheapest. The following table gve the estimated time for each operation on the array.
+
+|             | Add         | Remove      |
+| ----------- | ----------- | ----------- |
+| Beginning   | O(n)        | O(n)        |
+| Middle      | O(n)        | O(n)        |
+| End         | O(1)        | O(1)        |
+
+In order to use the array to implement ttha stack, we can simply push element at the end of the array and then pop from the end of the array.
 
 ## Using linked lists
-When you use linked list to implement the stack, all the operations run in O(i). We are adding a node at the head of the linked list when pushing, we are removing a node at the head when popping, we are just reading the value of the head node when getting the peek and we are checking is the head noe is null when checking if the stack is empty.
+When you use linked list to implement the stack, all the operations run in O(1). We are adding a node at the head of the linked list when pushing, we are removing a node at the head when popping, we are just reading the value of the head node when getting the peek and we are checking is the head noe is null when checking if the stack is empty.
 
 # Java libraries for Stacks
 In Java, we can represent a stack using the class Stack as follow. For example, if we want to create a stack of integers.
