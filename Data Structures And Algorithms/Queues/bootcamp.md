@@ -1,5 +1,5 @@
 # Basic.
-Queue is an abstract data type that support mainly two operations : `dequeue()` and `enqueue(o)`. Another operation could also be `isEmpty()` to check whether the queue is empty of not.
+Queue is an abstract data type that support mainly two operations : `dequeue()` and `enqueue(o)`. Another operation could also be `isEmpty()` to check whether the queue is empty of not. The queue is managed by the FIFO (First In First Out) policy, this means the first to comes to the collection is the first to be served out of the collection.
 - `enqueue(o)` : insert object o at the rear of the collection. input : object, output : None
 - `dequeue() ` : remove the object from the front of the collection and return it. An error occurs if the queue is empty. Input : none, output : object
 
